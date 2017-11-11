@@ -2,6 +2,8 @@
 
 PartyParrot RSpec3 results formatter. [All hail the party parrot!](http://cultofthepartyparrot.com/)
 
+![party parrot example](https://media.giphy.com/media/l1KdcvK2konzlhjmU/giphy.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
