@@ -30,7 +30,8 @@ module PartyParrot
         end
 
         def frames
-          @frames ||= Dir['./data/txt/*.txt'].map do |path|
+          # Handle gem file loading in application
+          @frames ||= Dir["#{File.expand_path('../../../../../', __FILE__)}/data/txt/*.txt"].map do |path|
             frame = File.read(path).split("\n")
             frame.map! { |line| line.size >= 50 ? line : line + (" " * (60 - line.size)) }.join("\n")
           end
