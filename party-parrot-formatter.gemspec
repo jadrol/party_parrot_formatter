@@ -1,9 +1,10 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'party_parrot/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "party-parrot-formatter"
-  spec.version       = '0.1.0'
+  spec.version       = PartyParrot::VERSION
   spec.authors       = ["Jaroslaw Rodak"]
   spec.email         = ["jaroslaw.rodak@gmail.com"]
 
